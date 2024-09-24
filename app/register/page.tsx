@@ -21,7 +21,6 @@ export default function Register(): JSX.Element {
 
   return (
     <div className="mt-20">
-      <h1>Register Section</h1>
       <form
         onSubmit={handleFormSubmit}
         className="flex flex-col space-y-4 p-6 bg-white rounded-lg shadow-lg max-w-lg mx-auto"
