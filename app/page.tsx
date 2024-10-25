@@ -17,10 +17,10 @@ export default function Home() {
         <h1 className="relative z-10 text-black text-5xl font-bold text-center pt-40">
           Men's Shred Society
         </h1>
-        <div>
-          <h3 className="relative z-10 text-black font-semibold text-center text-2xl bg-stone-50 mt-96 p-20 border-b-2">
-            We are a non-profit organization dedicated to supporting men’s
-            mental health through the power of skiing.
+        <div className="absolute bottom-0 w-full h-1/4 bg-stone-50 flex items-center justify-center p-5 mb-10 border-t-2">
+          <h3 className="relative z-10 text-black font-semibold text-center text-2xl">
+            Men's Shred Society is a non-profit organization dedicated to
+            supporting men’s mental health through the power of skiing.
             <br /> We provide free group therapy sessions and individual support
             in a positive, outdoor environment, fostering connection,
             resilience, and personal growth.
