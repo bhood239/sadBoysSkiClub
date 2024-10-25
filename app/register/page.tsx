@@ -1,5 +1,6 @@
 "use client";
 import { useForm, ValidationError } from "@formspree/react";
+import Image from "next/image";
 import { FormEvent } from "react";
 
 export default function Register(): JSX.Element {
@@ -20,12 +21,21 @@ export default function Register(): JSX.Element {
   }
 
   return (
-    <div className="mt-20">
+    <div className="mt-20 relative z-10">
+      <Image
+        src={"/pictures/skitracks.png"}
+        height={700}
+        width={700}
+        alt="Charlift picture"
+        className="w-full h-full fixed top-0 right-0 z-0 object-cover"
+      />
       <form
         onSubmit={handleFormSubmit}
-        className="flex flex-col space-y-4 p-6 bg-white rounded-lg shadow-lg max-w-lg mx-auto"
+        className="flex flex-col space-y-4 p-6 bg-stone-50 rounded-lg shadow-lg max-w-3xl mx-auto relative z-10"
       >
-        <h1 className="text-xl flex justify-center">Register</h1>
+        <h1 className="text-3xl font-bold text-gray-900 flex justify-center">
+          Register
+        </h1>
         <label htmlFor="name" className="text-gray-700 font-medium">
           Name
         </label>
@@ -84,6 +94,10 @@ export default function Register(): JSX.Element {
           field="dob"
           errors={state.errors}
         />
+        <div className="flex flex-row">
+          <p className="font-semibold">*Disclaimer:&nbsp;</p>
+          <p> Participants must be 18 years of age or older participate.</p>
+        </div>
 
         <label htmlFor="gender" className="text-gray-700 font-medium">
           Gender
