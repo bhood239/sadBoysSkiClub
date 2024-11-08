@@ -50,7 +50,7 @@ export default function About() {
       </nav>
 
       {/* Mission Section */}
-      <section id="mission" className="mb-16 ml-32 mr-32">
+      <section id="mission" className="mb-16 md:ml-32 md:mr-32">
         <h1 className="text-3xl font-bold text-gray-900 mb-4 text-center">
           Our Mission
         </h1>
@@ -63,17 +63,17 @@ export default function About() {
       </section>
 
       {/* What We Do Section */}
-      <section id="program" className="mb-16 ml-32 mr-32">
+      <section id="program" className="mb-16 md:ml-32 md:mr-32">
         <h1 className="text-3xl font-bold text-gray-900 mb-4 text-center">
           The Program
         </h1>
         <p className="text-gray-700 leading-relaxed text-center mb-4">
-          At Men’s Shred Society, our program is designed to provide a unique
-          blend of outdoor adventure and mental health support. We offer free
-          group therapy sessions and individual support tailored specifically
-          for men, utilizing skiing as a therapeutic tool. Please be advised
-          that this program is for male-identifying individuals aged 18 and
-          over.
+          At Slopeside Support Society, our program is designed to provide a
+          unique blend of outdoor adventure and mental health support. We offer
+          free group therapy sessions and individual support tailored
+          specifically for men, utilizing skiing as a therapeutic tool. Please
+          be advised that this program is for male-identifying individuals aged
+          18 and over.
         </p>
         <ul className="flex items-center justify-center flex-col ml-20 mr-20">
           <li className="text-xl font-semibold text-gray-800 mb-4">
@@ -121,7 +121,7 @@ export default function About() {
             support and enjoying the slopes together.
           </li>
           <li className="text-xl font-semibold text-gray-800 mb-8 text-center">
-            Join us at Men’s Shred Society, where we believe that healing
+            Join us at Slopeside Support Society, where we believe that healing
             happens not just in conversation, but also in connection with nature
             and each other.
           </li>
@@ -137,14 +137,14 @@ export default function About() {
       />
 
       {/* Therapists Section */}
-      <section id="therapists" className="mb-16 pl-14 pr-14 ml-44 mr-44">
+      <section id="therapists" className="mb-16 pl-14 pr-14 lg:ml-44 lg:mr-44">
         <h1 className="text-3xl font-bold text-gray-900 mb-6 text-center mt-10">
           Meet the Team
         </h1>
-        <div className="space-y-8 flex justify-center items-center flex-row gap-8">
+        <div className="space-y-8 flex justify-center items-center flex-col lg:flex-col gap-8">
           <div className="flex flex-col items-center">
             <Image
-              src={"/pictures/KristaFace.JPG"}
+              src={"/pictures/KristaFace.png"}
               height={200}
               width={200}
               alt="Krista Scott"
@@ -155,20 +155,91 @@ export default function About() {
                 Krista Scott - Founder & RCC
               </p>
               <br />
-              <p className="text-gray-600">Bio coming soon.</p>
+              <p className="text-gray-600">
+                Krista Bio goes here: Taylor Macdougall (he/him) holds a
+                master’s degree in social work from the University of Victoria,
+                and bachelor’s degrees in social work and philosophy from the
+                University of British Columbia and the University of Guelph
+                respectively. Taylor has worked in the field of mental health
+                since 2012, and currently works as a social work clinician with
+                Vancouver Coastal Health Mental Health and Substance Use
+                Services in Whistler and Pemberton. Taylor volunteers as a
+                director with the Alpine Club of Canada Whistler Section,
+                helping to coordinate the Wendy Thompson Hut Volunteer Custodian
+                Program. When the fish aren’t biting on the rivers of Pemberton,
+                Taylor has been known to ski, bike and climb around the Sea to
+                Sky Corridor. Taylor lives with his family on the unceeded
+                territory of the Lil’wat Nation in Pemberton.
+              </p>
             </div>
           </div>
-          <div>
-            <p className="text-xl font-semibold text-gray-800">
-              Greg McDonnell - RCC & CCC
-            </p>
-            <p className="text-gray-600">Bio coming soon.</p>
+          <div className="flex flex-col items-center">
+            <Image
+              src={"/pictures/GregFace.jpeg"}
+              height={200}
+              width={200}
+              alt="Taylor MacDougall"
+              className="mr-10"
+            />
+            <div className="flex flex-col items-center">
+              <p className="text-xl font-semibold text-gray-800">
+                Greg McDonnell - RCC & CCC
+              </p>
+              <br />
+              <p className="text-gray-600">
+                Greg McDonnell has worked in the area of social service delivery
+                for 30 years. Currently, he is a Registered Clinical Counsellor
+                (BC Association of Clinical Counsellors) and has owned a
+                successful private psychotherapy practice in Whistler BC since
+                2007. In his private practice he specializes in trauma, family
+                systems, couple and individual therapy. He is also registered
+                with the Canadian Sport Psychology Association and provides
+                Mental Performance Consulting. Greg has worked collaboratively
+                with a complex range of individuals, communities, corporations,
+                cultures and sport groups on projects related to Health and
+                Social Development. Greg also consults with several sport groups
+                in Canada reviewing and identifying needed supports in the area
+                of mental performance and goal setting (most notably the
+                Canadian Sports Institute). Many moons ago, Greg played elite
+                level basketball, he has competed competitively in running,
+                triathlon, road and mountain bike racing. He is a reviewer for
+                the Canadian Journal of Counselling A believer in leading a
+                balanced lifestyle, Greg can otherwise be found with his family
+                or with the wind in his face while skiing, mountain biking,
+                surfing or traveling.
+              </p>
+            </div>
           </div>
-          <div>
-            <p className="text-xl font-semibold text-gray-800">
-              Taylor Macdougall - MSW
-            </p>
-            <p className="text-gray-600">Bio coming soon.</p>
+          <div className="flex flex-col items-center">
+            <Image
+              src={"/pictures/TaylorFace.png"}
+              height={200}
+              width={200}
+              alt="Taylor MacDougall"
+              className="mr-10"
+            />
+            <div className="flex flex-col items-center">
+              <p className="text-xl font-semibold text-gray-800">
+                Taylor Macdougall - MSW
+              </p>
+              <br />
+              <p className="text-gray-600">
+                Taylor Macdougall (he/him) holds a master’s degree in social
+                work from the University of Victoria, and bachelor’s degrees in
+                social work and philosophy from the University of British
+                Columbia and the University of Guelph respectively. Taylor has
+                worked in the field of mental health since 2012, and currently
+                works as a social work clinician with Vancouver Coastal Health
+                Mental Health and Substance Use Services in Whistler and
+                Pemberton. Taylor volunteers as a director with the Alpine Club
+                of Canada Whistler Section, helping to coordinate the Wendy
+                Thompson Hut Volunteer Custodian Program. When the fish aren’t
+                biting on the rivers of Pemberton, Taylor has been known to ski,
+                bike and climb around the Sea to Sky Corridor. Taylor lives with
+                his family on the unceeded territory of the Lil’wat Nation in
+                Pemberton.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -178,7 +249,7 @@ export default function About() {
         <h1 className="text-3xl font-bold text-gray-900 mb-9 text-center">
           Partners
         </h1>
-        <div className="flex flex-row gap-20 justify-center pb-10">
+        <div className="flex flex-col gap-8 lg:flex-row lg:gap-20 justify-center pb-10">
           <a href="https://arcteryx.com/ca/en">
             <Image
               src={"/pictures/arcteryx.png"}
