@@ -13,7 +13,7 @@ export default function About() {
       />
       {/* Navigation Links */}
       <nav className="mb-12 mt-10">
-        <ul className="flex justify-center space-x-6 text-lg">
+        <ul className="flex justify-center space-x-6 text-lg ml-8 mr-8">
           <li>
             <a
               href="#mission"
@@ -75,11 +75,11 @@ export default function About() {
           be advised that this program is for male-identifying individuals aged
           18 and over.
         </p>
-        <ul className="flex items-center justify-center flex-col ml-20 mr-20">
+        <ul className="flex items-center text-center justify-center flex-col ml-20 mr-20">
           <li className="text-xl font-semibold text-gray-800 mb-4">
             Group Therapy Sessions:
           </li>
-          <li className="mb-4 text-center">
+          <li className="mb-4 text-center w-full">
             Our group therapy sessions are conducted prior to skiing and take
             place in a supportive and relaxed environment. Led by a registered
             psychotherapist, these sessions encourage open dialogue, shared
@@ -90,7 +90,7 @@ export default function About() {
           <li className="text-xl font-semibold text-gray-800 mb-4">
             Individual Support—Chairlift Chats:
           </li>
-          <li className="mb-4 text-center">
+          <li className="mb-4 text-center w-full">
             For those seeking one-on-one guidance, we offer &quot;Chairlift
             Chats&quot;, where participants can have informal conversations with
             trained mental health clinicians while riding the chairlift. This
@@ -101,7 +101,7 @@ export default function About() {
           <li className="text-xl font-semibold text-gray-800 mb-4">
             Community and Connection:
           </li>
-          <li className="mb-8 text-center">
+          <li className="mb-8 text-center w-full">
             Our program emphasizes building a strong sense of community, where
             participants can forge lasting friendships and support networks. By
             breaking down barriers and stigma surrounding mental health, we aim
@@ -151,11 +151,11 @@ export default function About() {
               className="mr-10"
             />
             <div className="flex flex-col">
-              <p className="text-xl font-semibold text-gray-800">
+              <p className="text-xl font-semibold text-gray-800 text-center">
                 Krista Scott - Founder & RCC
               </p>
               <br />
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-center">
                 Krista is a Registered Clinical Counsellor with the BC
                 Association of Clinical Counsellors and the founder of Slope
                 Side Support Society. With a Master’s in Clinical Mental Health
@@ -181,11 +181,11 @@ export default function About() {
               className="mr-10"
             />
             <div className="flex flex-col">
-              <p className="text-xl font-semibold text-gray-800">
+              <p className="text-xl font-semibold text-gray-800 text-center">
                 Greg McDonnell - RCC & CCC
               </p>
               <br />
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-center">
                 Greg McDonnell has worked in the area of social service delivery
                 for 30 years. Currently, he is a Registered Clinical Counsellor
                 (BC Association of Clinical Counsellors) and has owned a
@@ -218,11 +218,11 @@ export default function About() {
               className="mr-10"
             />
             <div className="flex flex-col">
-              <p className="text-xl font-semibold text-gray-800">
+              <p className="text-xl font-semibold text-gray-800 text-center">
                 Taylor Macdougall - MSW
               </p>
               <br />
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-center">
                 Taylor Macdougall (he/him) holds a master’s degree in social
                 work from the University of Victoria, and bachelor’s degrees in
                 social work and philosophy from the University of British
@@ -244,7 +244,10 @@ export default function About() {
       </section>
 
       {/* Partners Section */}
-      <section id="partners" className="ml-44 mr-44">
+      <section
+        id="partners"
+        className="flex flex-col lg:ml-44 lg:mr-44 items-center"
+      >
         <h1 className="text-3xl font-bold text-gray-900 mb-9 text-center">
           Partners
         </h1>

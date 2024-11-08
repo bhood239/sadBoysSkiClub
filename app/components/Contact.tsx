@@ -23,7 +23,7 @@ export default function Contact(): JSX.Element {
         onSubmit={handleFormSubmit}
         className="flex flex-col items-center space-y-4 p-6 bg-white shadow-lg w-full mx-auto border-t-8 border-b-8 border-slate-900"
       >
-        <h1 className="text-2xl flex justify-center items-center">
+        <h1 className="text-2xl flex justify-center items-center flex-col">
           Contact us at:&nbsp;
           <a href="mailto:info@slopesidesupport.com" className="underline">
             info@slopsidesupport.com
