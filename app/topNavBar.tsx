@@ -21,7 +21,7 @@ export default function TopNavBar() {
           )}
         </button>
         <ul
-          className={`flex-col lg:flex lg:flex-row lg:items-center absolute lg:static top-20 left-0 right-0 bg-black lg:bg-transparent lg:h-auto lg:w-auto z-40 transition-all duration-300 ease-in-out ${
+          className={`flex-col lg:flex lg:flex-row lg:items-center lg:gap-3 absolute lg:static top-20 left-0 right-0 bg-black lg:bg-transparent lg:h-auto lg:w-auto z-40 transition-all duration-300 ease-in-out ${
             isOpen ? "flex" : "hidden"
           }`}
         >
@@ -38,6 +38,15 @@ export default function TopNavBar() {
           <li>
             <a href="/#contact" className="text-white hover:text-gray-400 mr-3">
               Contact
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.seatoskysafetynet.com/"
+              target="_blank"
+              className="text-white hover:text-gray-400 mr-3"
+            >
+              Other Local Resources
             </a>
           </li>
         </ul>
