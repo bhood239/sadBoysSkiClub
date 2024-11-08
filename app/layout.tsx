@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Sad Boy's Ski Club",
+  title: "Slope Side Support Society",
   description: "Adventure Therapy",
 };
 

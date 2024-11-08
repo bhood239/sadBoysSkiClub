@@ -68,7 +68,7 @@ export default function About() {
           The Program
         </h1>
         <p className="text-gray-700 leading-relaxed text-center mb-4">
-          At Slopeside Support Society, our program is designed to provide a
+          At Slope Side Support Society, our program is designed to provide a
           unique blend of outdoor adventure and mental health support. We offer
           free group therapy sessions and individual support tailored
           specifically for men, utilizing skiing as a therapeutic tool. Please
@@ -121,7 +121,7 @@ export default function About() {
             support and enjoying the slopes together.
           </li>
           <li className="text-xl font-semibold text-gray-800 mb-8 text-center">
-            Join us at Slopeside Support Society, where we believe that healing
+            Join us at Slope Side Support Society, where we believe that healing
             happens not just in conversation, but also in connection with nature
             and each other.
           </li>
