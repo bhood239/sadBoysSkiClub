@@ -91,12 +91,12 @@ export default function About() {
             Individual Support—Chairlift Chats:
           </li>
           <li className="mb-4 text-center">
-            For those seeking one-on-one guidance, we offer "Chairlift Chats,"
-            where participants can have informal conversations with trained
-            mental health clinicians while riding the chairlift. This unique
-            setting provides a comfortable space for discussing challenges,
-            setting goals, and developing coping strategies in a relaxed and
-            natural environment.
+            For those seeking one-on-one guidance, we offer &quot;Chairlift
+            Chats&quot;, where participants can have informal conversations with
+            trained mental health clinicians while riding the chairlift. This
+            unique setting provides a comfortable space for discussing
+            challenges, setting goals, and developing coping strategies in a
+            relaxed and natural environment.
           </li>
           <li className="text-xl font-semibold text-gray-800 mb-4">
             Community and Connection:

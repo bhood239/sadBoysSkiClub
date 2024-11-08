@@ -1,12 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
 import { FormEvent } from "react";
 
-interface FormState {
-  succeeded: boolean;
-  submitting: boolean;
-  errors: { field: string; message: string }[];
-}
-
 export default function Contact(): JSX.Element {
   const [state, handleSubmit] = useForm("xzzpwykw");
 

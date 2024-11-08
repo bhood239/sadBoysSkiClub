@@ -173,7 +173,7 @@ export default function Register(): JSX.Element {
         />
 
         <label htmlFor="topics" className="text-gray-700 font-medium">
-          Topics You'd Like to Discuss (Optional)
+          Topics You&apos;d Like to Discuss (Optional)
         </label>
         <textarea
           id="topics"
