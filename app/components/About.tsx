@@ -142,7 +142,7 @@ export default function About() {
           Meet the Team
         </h1>
         <div className="space-y-8 flex justify-center items-center flex-col lg:flex-col gap-8">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col lg:flex-row items-center">
             <Image
               src={"/pictures/KristaFace.png"}
               height={200}
@@ -150,30 +150,29 @@ export default function About() {
               alt="Krista Scott"
               className="mr-10"
             />
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col">
               <p className="text-xl font-semibold text-gray-800">
                 Krista Scott - Founder & RCC
               </p>
               <br />
               <p className="text-gray-600">
-                Krista Bio goes here: Taylor Macdougall (he/him) holds a
-                master’s degree in social work from the University of Victoria,
-                and bachelor’s degrees in social work and philosophy from the
-                University of British Columbia and the University of Guelph
-                respectively. Taylor has worked in the field of mental health
-                since 2012, and currently works as a social work clinician with
-                Vancouver Coastal Health Mental Health and Substance Use
-                Services in Whistler and Pemberton. Taylor volunteers as a
-                director with the Alpine Club of Canada Whistler Section,
-                helping to coordinate the Wendy Thompson Hut Volunteer Custodian
-                Program. When the fish aren’t biting on the rivers of Pemberton,
-                Taylor has been known to ski, bike and climb around the Sea to
-                Sky Corridor. Taylor lives with his family on the unceeded
-                territory of the Lil’wat Nation in Pemberton.
+                Krista is a Registered Clinical Counsellor with the BC
+                Association of Clinical Counsellors and the founder of Slope
+                Side Support Society. With a Master’s in Clinical Mental Health
+                Counselling and a BA in Psychology & Philosophy, Krista
+                specializes in providing therapeutic intervention to youth
+                trauma survivors in Whistler, Pemberton, and Lower Stl’atl’imx
+                Nations. The inspiration for Slope Side Support Society came
+                from Krista’s desire to combine her passions for therapy and
+                skiing, providing mental health services in a way that met
+                people where they are, and minimizes barriers. She aims to offer
+                accessible support that feels authentic to the Sea to Sky
+                Corridor. When she’s not working, Krista enjoys skiing, hiking,
+                and pretending to love biking.
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col lg:flex-row items-center">
             <Image
               src={"/pictures/GregFace.jpeg"}
               height={200}
@@ -181,7 +180,7 @@ export default function About() {
               alt="Taylor MacDougall"
               className="mr-10"
             />
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col">
               <p className="text-xl font-semibold text-gray-800">
                 Greg McDonnell - RCC & CCC
               </p>
@@ -210,7 +209,7 @@ export default function About() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col lg:flex-row items-center">
             <Image
               src={"/pictures/TaylorFace.png"}
               height={200}
@@ -218,7 +217,7 @@ export default function About() {
               alt="Taylor MacDougall"
               className="mr-10"
             />
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col">
               <p className="text-xl font-semibold text-gray-800">
                 Taylor Macdougall - MSW
               </p>
