@@ -54,7 +54,7 @@ export default function About() {
         <h1 className="text-3xl font-bold text-gray-900 mb-4 text-center">
           Our Mission
         </h1>
-        <p className="text-gray-700 leading-relaxed text-center text-xl font-semibold">
+        <p className="text-gray-700 leading-relaxed text-center text-xl font-semibold px-4">
           To create a safe space where men can share their experiences, build
           community, and find healing on the slopes. Through our programs, we
           aim to break the stigma around mental health and empower men to
@@ -67,7 +67,7 @@ export default function About() {
         <h1 className="text-3xl font-bold text-gray-900 mb-4 text-center">
           The Program
         </h1>
-        <p className="text-gray-700 leading-relaxed text-center mb-4">
+        <p className="text-gray-700 leading-relaxed text-center mb-4 mx-6">
           At Slope Side Support Society, our program is designed to provide a
           unique blend of outdoor adventure and mental health support. We offer
           free group therapy sessions and individual support tailored
@@ -75,7 +75,7 @@ export default function About() {
           be advised that this program is for male-identifying individuals aged
           18 and over.
         </p>
-        <ul className="flex items-center text-center justify-center flex-col ml-20 mr-20">
+        <ul className="flex items-center text-center justify-center flex-col ml-14 mr-14">
           <li className="text-xl font-semibold text-gray-800 mb-4">
             Group Therapy Sessions:
           </li>
