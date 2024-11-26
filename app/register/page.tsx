@@ -13,7 +13,7 @@ export default function Register(): JSX.Element {
 
   if (state.succeeded) {
     return (
-      <p className="mt-20">
+      <p className="mt-20 text-3xl font-bold text-gray-900 flex justify-center">
         Thank you for registering. We will be in touch with a confirmation
         email.
       </p>
@@ -161,10 +161,10 @@ export default function Register(): JSX.Element {
           multiple
           className="border border-gray-300 rounded-md p-2"
         >
-          <option value="jan1">January 1</option>
-          <option value="jan2">January 2</option>
-          <option value="jan3">January 3</option>
-          <option value="jan4">January 4</option>
+          <option value="jan17">Friday, January 17</option>
+          <option value="feb9">Sunday, February 9</option>
+          <option value="mar7">Friday, March 7</option>
+          <option value="apr13">Sunday, April 13</option>
         </select>
         <ValidationError
           prefix="Dates Registering for"
@@ -206,6 +206,24 @@ export default function Register(): JSX.Element {
           </label>
         </div>
         <ValidationError prefix="Aware" field="aware" errors={state.errors} />
+
+        <div className="flex items-start">
+          <input
+            type="checkbox"
+            id="ski ability"
+            name="ski ability"
+            className="mt-1 h-4 w-4 border-gray-300 rounded focus:ring-blue-500"
+          />
+          <label htmlFor="ski ability" className="ml-2 text-gray-700">
+            I am aware that participants are expected to be able to confidently
+            ski a blue run.
+          </label>
+        </div>
+        <ValidationError
+          prefix="ski ability"
+          field="ski ability"
+          errors={state.errors}
+        />
 
         <div className="flex items-start">
           <input

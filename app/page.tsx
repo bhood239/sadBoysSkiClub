@@ -17,7 +17,7 @@ export default function Home() {
         <h1 className="relative z-10 text-black text-5xl font-bold text-center pt-40">
           Slope Side Support Society
         </h1>
-        <div className="absolute bottom-0 w-full h-1/3 bg-stone-50 flex items-center justify-center border-t-2 mb-5 pb-5 lg:pr-5 lg:pl-5">
+        <div className="absolute bottom-0 w-full h-1/3 bg-stone-50 flex items-center justify-center border-t-2 mb-5 pb-5 lg:pr-5 lg:pl-5 px-3">
           <h3 className="relative z-10 text-black font-semibold text-center text-base lg:text-2xl mb-5">
             Slope Side Support Society is a non-profit organization dedicated to
             supporting men’s mental health through the power of skiing.

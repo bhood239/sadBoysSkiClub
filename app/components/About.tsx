@@ -88,15 +88,14 @@ export default function About() {
             discussions before hitting the slopes.
           </li>
           <li className="text-xl font-semibold text-gray-800 mb-4">
-            Individual Support—Chairlift Chats:
+            Chairlift Chats:
           </li>
           <li className="mb-4 text-center w-full">
-            For those seeking one-on-one guidance, we offer &quot;Chairlift
-            Chats&quot;, where participants can have informal conversations with
-            trained mental health clinicians while riding the chairlift. This
-            unique setting provides a comfortable space for discussing
-            challenges, setting goals, and developing coping strategies in a
-            relaxed and natural environment.
+            While skiing, we offer &quot;Chairlift Chats&quot;, where
+            participants can have conversations with trained mental health
+            clinicians while riding the chairlift. This unique setting provides
+            a comfortable space for discussing challenges, setting goals, and
+            developing coping strategies in a relaxed and natural environment.
           </li>
           <li className="text-xl font-semibold text-gray-800 mb-4">
             Community and Connection:
@@ -260,21 +259,13 @@ export default function About() {
               alt="arcteryx logo"
             />
           </a>
-          <a href="https://www.whistlerblackcomb.com/">
-            <Image
-              src={"/pictures/wb.png"}
-              height={200}
-              width={200}
-              alt="Whistler Blackcomb logo"
-              className="-mt-9"
-            />
-          </a>
+
           <a href="https://mcdonnellcounselling.com/" className="bg-black">
             <Image
               src={"/pictures/McDonnell_Counselling_logo_white.png"}
               height={200}
               width={200}
-              alt="Whistler Blackcomb logo"
+              alt="McDonnell councelling logo"
             />
           </a>
         </div>
