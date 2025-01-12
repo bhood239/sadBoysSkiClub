@@ -161,8 +161,12 @@ export default function Register(): JSX.Element {
           multiple
           className="border border-gray-300 rounded-md p-2"
         >
-          <option value="jan17">Friday, January 17</option>
-          <option value="feb9">Sunday, February 9</option>
+          <option value="jan17">
+            Friday, January 17 FULL - Join the waitlist
+          </option>
+          <option value="feb9">
+            Sunday, February 9 FULL - Join the waitlist
+          </option>
           <option value="mar7">Friday, March 7</option>
           <option value="apr13">Sunday, April 13</option>
         </select>
