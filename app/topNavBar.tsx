@@ -50,13 +50,13 @@ export default function TopNavBar() {
             </a>
           </li>
         </ul>
-        <ul className="flex justify-end align-top">
+        {/* <ul className="flex justify-end align-top">
           <li>
             <a href="/register" className="text-white hover:text-gray-400">
               Register
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </nav>
   );
