@@ -21,9 +21,8 @@ export default function TopNavBar() {
           )}
         </button>
         <ul
-          className={`flex-col lg:flex lg:flex-row lg:items-center lg:gap-3 absolute lg:static top-20 left-0 right-0 bg-black lg:bg-transparent lg:h-auto lg:w-auto z-40 transition-all duration-300 ease-in-out ${
-            isOpen ? "flex" : "hidden"
-          }`}
+          className={`flex-col lg:flex lg:flex-row lg:items-center lg:gap-3 absolute lg:static top-20 left-0 right-0 bg-black lg:bg-transparent lg:h-auto lg:w-auto z-40 transition-all duration-300 ease-in-out ${isOpen ? "flex" : "hidden"
+            }`}
         >
           <li>
             <a href="/#home" className="text-white hover:text-gray-400 mr-3">
@@ -50,13 +49,13 @@ export default function TopNavBar() {
             </a>
           </li>
         </ul>
-        {/* <ul className="flex justify-end align-top">
+        <ul className="flex justify-end align-top">
           <li>
             <a href="/register" className="text-white hover:text-gray-400">
               Register
             </a>
           </li>
-        </ul> */}
+        </ul>
       </div>
     </nav>
   );
