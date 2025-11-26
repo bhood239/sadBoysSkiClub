@@ -44,22 +44,22 @@ export default function Home() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h1 className="text-white text-5xl md:text-7xl font-bold text-center drop-shadow-2xl tracking-tight">
+          <h1 className="text-white text-4xl md:text-7xl font-bold text-center drop-shadow-2xl tracking-tight">
             Slope Side Support Society
           </h1>
         </div>
 
         {/* Intro Text - Pushed to the bottom, with padding to avoid overlap */}
         <div 
-          className={`relative z-10 w-full max-w-4xl px-6 pb-32 text-center space-y-6 transition-all duration-[1500ms] delay-1000 ease-out ${
+          className={`relative z-10 w-full max-w-4xl px-6 pb-20 md:pb-32 text-center space-y-6 transition-all duration-[1500ms] delay-1000 ease-out ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >
-          <h3 className="text-stone-100 font-medium text-xl md:text-2xl leading-relaxed drop-shadow-lg">
+          <h3 className="text-stone-100 font-medium text-lg md:text-2xl leading-relaxed drop-shadow-lg">
             Slope Side Support Society is a non-profit organization dedicated to
             supporting men’s mental health through the power of skiing.
           </h3>
-          <p className="text-stone-200 text-lg font-light drop-shadow-md max-w-2xl mx-auto">
+          <p className="text-stone-200 text-base md:text-lg font-light drop-shadow-md max-w-2xl mx-auto">
             We provide free group therapy sessions and individual support
             in a positive, outdoor environment, fostering connection,
             resilience, and personal growth.
