@@ -31,7 +31,7 @@ export default function Contact(): JSX.Element {
               Get in Touch
             </h2>
             <p className="text-slate-600 mb-4">
-              We're here to listen. Reach out directly or use the form below.
+              We&apos;re here to listen. Reach out directly or use the form below.
             </p>
             <a
               href="mailto:info@slopesidesupport.com"

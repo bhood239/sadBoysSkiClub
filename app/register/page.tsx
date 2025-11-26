@@ -1,7 +1,7 @@
 "use client";
 import { useForm, ValidationError } from "@formspree/react";
 import Image from "next/image";
-import { FormEvent, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Register(): JSX.Element {
   const [state, handleSubmit] = useForm("xyzgvlbo");
