@@ -202,8 +202,7 @@ export default function Register(): JSX.Element {
                 </label>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {[
-                    { id: "jan9", label: "Friday, January 9" },
-                    { id: "feb8", label: "Sunday, February 8" },
+                    { id: "feb8", label: "Sunday, February 8 - Full" },
                     { id: "mar6", label: "Friday, March 6" },
                     { id: "apr12", label: "Sunday, April 12" },
                   ].map((date) => (
