@@ -11,7 +11,7 @@ export default function TopNavBar() {
   };
 
   return (
-    <nav className="h-20 fixed left-0 right-0 top-0 bg-black p-4 pl-14 pr-14 shadow-md z-50 opacity-75">
+    <nav className="h-20 fixed left-0 right-0 top-10 bg-black p-4 pl-14 pr-14 shadow-md z-50 opacity-75">
       <div className="flex flex-row justify-between text-xl mt-2">
         <button className="text-white lg:hidden" onClick={toggleMenu}>
           {isOpen ? (

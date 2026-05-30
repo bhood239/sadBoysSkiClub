@@ -40,7 +40,7 @@ export default function Home() {
 
         {/* Title - Centered vertically in the available space */}
         <div 
-          className={`flex-grow flex items-center justify-center px-4 pt-20 transition-all duration-[1500ms] delay-500 ease-out ${
+          className={`flex-grow flex items-center justify-center px-4 pt-32 transition-all duration-[1500ms] delay-500 ease-out ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}
         >

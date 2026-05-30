@@ -55,8 +55,8 @@ export default function Register(): JSX.Element {
   }
 
   return (
-    // Added pt-28 to clear the fixed TopNavBar (h-20)
-    <div className="min-h-screen pt-28 pb-12 px-4 sm:px-6 lg:px-8 relative bg-stone-100">
+    // pt-36 clears the fixed announcement banner (h-10) + TopNavBar (h-20)
+    <div className="min-h-screen pt-36 pb-12 px-4 sm:px-6 lg:px-8 relative bg-stone-100">
       <Image
         src={"/pictures/skitracks.png"}
         fill
@@ -180,6 +180,7 @@ export default function Register(): JSX.Element {
                 Session Information
               </h2>
 
+              {/* SKI-SPECIFIC — commented out for the sailing session. Restore for ski sessions.
               <div>
                 <label htmlFor="ability" className="block text-sm font-medium text-gray-700 mb-1">
                   Ski Ability Level
@@ -195,16 +196,35 @@ export default function Register(): JSX.Element {
                   <option value="expert">Expert (Double blacks/Off-piste)</option>
                 </select>
               </div>
+              */}
+
+              <div>
+                <label htmlFor="experience" className="block text-sm font-medium text-gray-700 mb-1">
+                  Sailing Experience
+                </label>
+                <select
+                  name="experience"
+                  id="experience"
+                  className="w-full border-gray-300 rounded-md shadow-sm focus:ring-slate-500 focus:border-slate-500 p-2.5 border bg-white"
+                >
+                  <option value="none">No experience (all welcome!)</option>
+                  <option value="some">Some experience</option>
+                  <option value="experienced">Experienced sailor</option>
+                </select>
+                <p className="text-xs text-gray-500 mt-1">No experience necessary — everyone is welcome aboard.</p>
+              </div>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-3">
-                  Select Dates (Choose at least one)
+                  Session
                 </label>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 gap-4">
                   {[
-                    { id: "feb8", label: "Sunday, February 8 - Full" },
-                    { id: "mar6", label: "Friday, March 6" },
-                    { id: "apr12", label: "Sunday, April 12" },
+                    // SKI-SPECIFIC dates — commented out for the sailing session. Restore for ski sessions.
+                    // { id: "feb8", label: "Sunday, February 8 - Full" },
+                    // { id: "mar6", label: "Friday, March 6" },
+                    // { id: "apr12", label: "Sunday, April 12" },
+                    { id: "jun8-sailing", label: "Sailing Session — Monday, June 8 · 4–8 PM (times may vary)" },
                   ].map((date) => (
                     <div key={date.id} className="relative">
                       <input
@@ -212,6 +232,7 @@ export default function Register(): JSX.Element {
                         id={`date-${date.id}`}
                         name="dates"
                         value={date.id}
+                        defaultChecked
                         onChange={handleDateChange}
                         className="peer sr-only"
                       />
@@ -270,6 +291,7 @@ export default function Register(): JSX.Element {
             <div className="bg-stone-50 p-6 rounded-lg border border-stone-200 space-y-4">
               <h3 className="font-semibold text-slate-900">Required Agreements</h3>
               
+              {/* SKI-SPECIFIC agreements — commented out for the sailing session. Restore for ski sessions.
               <div className="flex items-start">
                 <input
                   type="checkbox"
@@ -293,6 +315,20 @@ export default function Register(): JSX.Element {
                 />
                 <label htmlFor="ski_ability_check" className="ml-3 text-sm text-gray-700">
                   I am aware that participants are expected to be able to confidently ski a blue run.
+                </label>
+              </div>
+              */}
+
+              <div className="flex items-start">
+                <input
+                  type="checkbox"
+                  id="water_comfort"
+                  name="water comfort"
+                  required
+                  className="mt-1 h-4 w-4 text-slate-600 border-gray-300 rounded focus:ring-slate-500"
+                />
+                <label htmlFor="water_comfort" className="ml-3 text-sm text-gray-700">
+                  I am comfortable being on and around the water, and I will wear a provided life jacket at all times on the boat.
                 </label>
               </div>
 
