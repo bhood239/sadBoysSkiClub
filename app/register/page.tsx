@@ -198,6 +198,7 @@ export default function Register(): JSX.Element {
               </div>
               */}
 
+              {/* SAILING-SPECIFIC — not needed for the BBQ. Remove once event passes.
               <div>
                 <label htmlFor="experience" className="block text-sm font-medium text-gray-700 mb-1">
                   Sailing Experience
@@ -213,6 +214,7 @@ export default function Register(): JSX.Element {
                 </select>
                 <p className="text-xs text-gray-500 mt-1">No experience necessary — everyone is welcome aboard.</p>
               </div>
+              */}
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-3">
@@ -224,7 +226,7 @@ export default function Register(): JSX.Element {
                     // { id: "feb8", label: "Sunday, February 8 - Full" },
                     // { id: "mar6", label: "Friday, March 6" },
                     // { id: "apr12", label: "Sunday, April 12" },
-                    { id: "jun8-sailing", label: "Sailing Session — Monday, June 8 · 4–8 PM (times may vary)" },
+                    { id: "aug25-bbq-paddle", label: "Lakeside BBQ and Paddle — Tuesday, August 25 · 5–8 PM (times may vary)" },
                   ].map((date) => (
                     <div key={date.id} className="relative">
                       <input
@@ -319,6 +321,7 @@ export default function Register(): JSX.Element {
               </div>
               */}
 
+              {/* SAILING-SPECIFIC — not needed for the BBQ. Remove once event passes.
               <div className="flex items-start">
                 <input
                   type="checkbox"
@@ -331,6 +334,7 @@ export default function Register(): JSX.Element {
                   I am comfortable being on and around the water, and I will wear a provided life jacket at all times on the boat.
                 </label>
               </div>
+              */}
 
               <div className="flex items-start">
                 <input
