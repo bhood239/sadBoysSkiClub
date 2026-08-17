@@ -1,5 +1,5 @@
 import Image from "next/image";
-import RegisterButton from "./RegisterButton";
+// import RegisterButton from "./RegisterButton";
 
 export default function About() {
   return (
