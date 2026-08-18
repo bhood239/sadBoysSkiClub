@@ -13,7 +13,7 @@ export default function AnnouncementBanner() {
         <span className="font-semibold">Lakeside BBQ and Paddle</span>
         <span className="hidden sm:inline">
           {" "}
-          — Tuesday, August 25 · 5–8 PM (times may vary)
+          — Tuesday, August 25 · 4-7 PM (times may vary)
         </span>{" "}
         · <span className="underline underline-offset-2">Register&nbsp;→</span>
       </p>
