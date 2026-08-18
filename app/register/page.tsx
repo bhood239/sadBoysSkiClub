@@ -226,7 +226,7 @@ export default function Register(): JSX.Element {
                     // { id: "feb8", label: "Sunday, February 8 - Full" },
                     // { id: "mar6", label: "Friday, March 6" },
                     // { id: "apr12", label: "Sunday, April 12" },
-                    { id: "aug25-bbq-paddle", label: "Lakeside BBQ and Paddle — Tuesday, August 25 · 5–8 PM (times may vary)" },
+                    { id: "aug25-bbq-paddle", label: "Lakeside BBQ and Paddle — Tuesday, August 25 · 4-7 PM" },
                   ].map((date) => (
                     <div key={date.id} className="relative">
                       <input
