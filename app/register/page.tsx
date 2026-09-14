@@ -11,7 +11,7 @@ export default function Register(): JSX.Element {
   useEffect(() => {
     if (formRef.current) {
       const checkboxes = formRef.current.querySelectorAll<HTMLInputElement>(
-        'input[name="dates"]'
+        'input[name="dates"]',
       );
       const isChecked = Array.from(checkboxes).some((cb) => cb.checked);
       if (!isChecked && checkboxes.length > 0) {
@@ -24,7 +24,7 @@ export default function Register(): JSX.Element {
     const form = e.target.form;
     if (form) {
       const checkboxes = form.querySelectorAll<HTMLInputElement>(
-        'input[name="dates"]'
+        'input[name="dates"]',
       );
       const isChecked = Array.from(checkboxes).some((cb) => cb.checked);
 
@@ -46,8 +46,8 @@ export default function Register(): JSX.Element {
             Registration Received
           </h2>
           <p className="text-gray-600">
-            Thank you for your interest in joining a session with Slopeside Support Society. We will be in touch
-            shortly with details.
+            Thank you for your interest in joining a session with Slopeside
+            Support Society. We will be in touch shortly with details.
           </p>
         </div>
       </div>
@@ -64,7 +64,7 @@ export default function Register(): JSX.Element {
         className="fixed top-0 left-0 z-0 object-cover opacity-40 grayscale"
         priority
       />
-      
+
       <div className="relative z-10 max-w-3xl mx-auto">
         <form
           ref={formRef}
@@ -72,20 +72,20 @@ export default function Register(): JSX.Element {
           className="bg-white shadow-xl rounded-lg overflow-hidden border border-gray-200"
         >
           {/* Honeypot field. Formspree rejects if filled. */}
-          <input 
-            type="text" 
-            name="_gotcha" 
-            style={{ display: "none" }} 
-            tabIndex={-1} 
-            autoComplete="off" 
+          <input
+            type="text"
+            name="_gotcha"
+            style={{ display: "none" }}
+            tabIndex={-1}
+            autoComplete="off"
           />
 
           {/* Header Section - Dark Slate theme */}
-            <div className="bg-gradient-to-br from-slate-50 to-stone-100 py-6 px-6 border-b border-slate-200">
+          <div className="bg-gradient-to-br from-slate-50 to-stone-100 py-6 px-6 border-b border-slate-200">
             <h1 className="text-2xl font-semibold text-slate-800 text-center tracking-wide">
               Session Sign-Up
             </h1>
-            </div>
+          </div>
 
           <div className="p-8 space-y-8">
             {/* Section: Personal Details */}
@@ -93,9 +93,12 @@ export default function Register(): JSX.Element {
               <h2 className="text-xl font-semibold text-slate-800 border-b border-gray-200 pb-2">
                 Participant Details
               </h2>
-              
+
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
                   Full Name
                 </label>
                 <input
@@ -106,12 +109,19 @@ export default function Register(): JSX.Element {
                   className="w-full border-gray-300 rounded-md shadow-sm focus:ring-slate-500 focus:border-slate-500 p-2.5 border"
                   placeholder="John Doe"
                 />
-                <ValidationError prefix="Name" field="name" errors={state.errors} />
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
+                />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
                     Email Address
                   </label>
                   <input
@@ -122,11 +132,18 @@ export default function Register(): JSX.Element {
                     className="w-full border-gray-300 rounded-md shadow-sm focus:ring-slate-500 focus:border-slate-500 p-2.5 border"
                     placeholder="john@example.com"
                   />
-                  <ValidationError prefix="Email" field="email" errors={state.errors} />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="phone"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
                     Phone Number
                   </label>
                   <input
@@ -137,28 +154,44 @@ export default function Register(): JSX.Element {
                     className="w-full border-gray-300 rounded-md shadow-sm focus:ring-slate-500 focus:border-slate-500 p-2.5 border"
                     placeholder="(555) 123-4567"
                   />
-                  <ValidationError prefix="Phone" field="phone" errors={state.errors} />
+                  <ValidationError
+                    prefix="Phone"
+                    field="phone"
+                    errors={state.errors}
+                  />
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="dob" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="dob"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
                     Date of Birth
                   </label>
-                  <input 
-                    type="date" 
-                    name="dob" 
+                  <input
+                    type="date"
+                    name="dob"
                     id="dob"
                     required
                     className="w-full border-gray-300 rounded-md shadow-sm focus:ring-slate-500 focus:border-slate-500 p-2.5 border"
                   />
-                  <p className="text-xs text-gray-500 mt-1">*Must be 18+ to participate</p>
-                  <ValidationError prefix="DOB" field="dob" errors={state.errors} />
+                  <p className="text-xs text-gray-500 mt-1">
+                    *Must be 18+ to participate
+                  </p>
+                  <ValidationError
+                    prefix="DOB"
+                    field="dob"
+                    errors={state.errors}
+                  />
                 </div>
 
                 <div>
-                  <label htmlFor="gender" className="block text-sm font-medium text-gray-700 mb-1">
+                  <label
+                    htmlFor="gender"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
                     Gender
                   </label>
                   <select
@@ -226,7 +259,11 @@ export default function Register(): JSX.Element {
                     // { id: "feb8", label: "Sunday, February 8 - Full" },
                     // { id: "mar6", label: "Friday, March 6" },
                     // { id: "apr12", label: "Sunday, April 12" },
-                    { id: "aug25-bbq-paddle", label: "Lakeside BBQ and Paddle — Tuesday, August 25 · 4-7 PM" },
+                    {
+                      id: "oct2Meeting",
+                      label:
+                        "Strategic Planning Meeting — Friday, October 2 · 12-3 PM",
+                    },
                   ].map((date) => (
                     <div key={date.id} className="relative">
                       <input
@@ -246,14 +283,28 @@ export default function Register(): JSX.Element {
                           {date.label}
                         </span>
                         {/* Checkmark Icon */}
-                        <svg className="w-5 h-5 text-slate-700 hidden peer-checked:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                        <svg
+                          className="w-5 h-5 text-slate-700 hidden peer-checked:block"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M5 13l4 4L19 7"
+                          />
                         </svg>
                       </label>
                     </div>
                   ))}
                 </div>
-                <ValidationError prefix="Dates" field="dates" errors={state.errors} />
+                <ValidationError
+                  prefix="Dates"
+                  field="dates"
+                  errors={state.errors}
+                />
               </div>
             </div>
 
@@ -262,9 +313,12 @@ export default function Register(): JSX.Element {
               <h2 className="text-xl font-semibold text-slate-800 border-b border-gray-200 pb-2">
                 Additional Information
               </h2>
-              
+
               <div>
-                <label htmlFor="topics" className="block text-sm font-medium text-gray-700 mb-1">
+                <label
+                  htmlFor="topics"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
                   Topics to Discuss (Optional)
                 </label>
                 <textarea
@@ -277,7 +331,10 @@ export default function Register(): JSX.Element {
               </div>
 
               <div>
-                <label htmlFor="hear" className="block text-sm font-medium text-gray-700 mb-1">
+                <label
+                  htmlFor="hear"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
                   How Did You Hear About Us?
                 </label>
                 <input
@@ -291,8 +348,10 @@ export default function Register(): JSX.Element {
 
             {/* Section: Agreements */}
             <div className="bg-stone-50 p-6 rounded-lg border border-stone-200 space-y-4">
-              <h3 className="font-semibold text-slate-900">Required Agreements</h3>
-              
+              <h3 className="font-semibold text-slate-900">
+                Required Agreements
+              </h3>
+
               {/* SKI-SPECIFIC agreements — commented out for the sailing session. Restore for ski sessions.
               <div className="flex items-start">
                 <input
@@ -344,8 +403,12 @@ export default function Register(): JSX.Element {
                   required
                   className="mt-1 h-4 w-4 text-slate-600 border-gray-300 rounded focus:ring-slate-500"
                 />
-                <label htmlFor="liability" className="ml-3 text-sm text-gray-700">
-                  I confirm that the organizers are not liable for accidents or injuries.
+                <label
+                  htmlFor="liability"
+                  className="ml-3 text-sm text-gray-700"
+                >
+                  I confirm that the organizers are not liable for accidents or
+                  injuries.
                 </label>
               </div>
             </div>
